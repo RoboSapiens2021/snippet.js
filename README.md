@@ -5,8 +5,8 @@ Hey! This is a light weight library for making, well, code snippets! It's easy, 
 Before we start, make sure you have these two files ready to go:
 
 `index.html`\
-`index.js`
-
+`index.js`\
+`style.css`
 
 
 ## Javascript Import
@@ -18,7 +18,7 @@ Put this script tag into your body tag. This script handles the text highlightin
 ## CSS Import
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css">`
 
-Put this into the head section of your html file
+Put this into the head section of your html file.
 This handles backgrounds, layout etc.
 
 ## How to use it
@@ -39,11 +39,28 @@ can help with sizing
         
  ## Enabling in highlighting!
  
- After doing that, you should shee the code snippet but with no highlighting. If thats want you want,then you are done. But in my opinion, it looks pretty plain.\ #####Lets fix that!\
+ After doing that, you should shee the code snippet but with no highlighting. If thats want you want,then you are done. But in my opinion, it looks pretty plain.
  In your `index.js` file, add 
  `highlighter(document.getElementById("id"));`
 
-#####Replace Id with the same one your div is assigned to and you should be done!
+#### Replace Id with the same one your div is assigned to and you should be done!
+
+## Custom CSS styling
+
+You can easily style your code boxes! Declare a `.code` in your css file. After doing that, you can mess around with different\
+properties. 
+
+### Example
+
+```css
+.code-wrapper {
+  color: rgb(0, 128, 117);
+  border: solid 1px black;
+}
+
+```
+
+# Thanks for reading!
 
 
 
