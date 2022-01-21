@@ -12,11 +12,11 @@ Before we start, make sure you have these two files ready to go:
 ## Javascript Import
 
 
-```<script src=""https://raw.githubusercontent.com/RoboSapiens2021/snippet.js/main/highlight.js></script>```
+```<script src="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/highlight.js"></script>```
 Put this script tag into your body tag. This script handles the text highlighting. So far, it only works with html. Further testing has to be done to figure out the javascript portion. This script came from w3 schools. The colors are edited. 
 
 ## CSS Import
-`<link rel="stylesheet" href="https://raw.githubusercontent.com/RoboSapiens2021/snippet.js/main/style.css.css">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css">`
 
 Put this into the head section of your html file
 This handles backgrounds, layout etc.
@@ -36,26 +36,16 @@ You need to use html entities. [This](https://dev.w3.org/html5/html-author/charr
 If that sounds like to much work, you can look up html entity encoder. Paste that in the div. Wrapping the div with h1, h2, h3, h4, h5, h6, or p tags 
 can help with sizing
 
-##### Example
+        
+ ## Enabling in highlighting!
+ 
+ After doing that, you should shee the code snippet but with no highlighting. If thats want you want,then you are done. But in my opinion, it looks pretty plain.\ #####Lets fix that!\
+ In your `index.js` file, add 
+ `highlighter(document.getElementById("id"));`
 
-    
-```html
-<div id="code" class="code code-wrapper">
-      &lt;!DOCTYPE html&gt;<br />
-      &lt;html&gt;<br />
-      &lt;body&gt;<br />
-      <br />
-      &lt;h1&gt;Testing an HTML Syntax Highlighter&lt;/h2&gt;<br />
-      &lt;p&gt;Hello world!&lt;/p&gt;<br />
-      &lt;a href="https://www.w3schools.com"&gt;Back to School&lt;/a&gt;<br />
-      <br />
-      &lt;script src = ""&gt;<br />
-     
-      &lt;/script&gt;<br />
+#####Replace Id with the same one your div is assigned to and you should be done!
 
-      &lt;/body&gt;<br />
-      &lt;/html&gt;
-    </div>
-    ```
- # fr
+
+
+ 
     
