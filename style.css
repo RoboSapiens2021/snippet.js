@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+.code-wrapper {
+  background-color: black;
+  word-wrap: break-word;
+  margin: 1em;
+}
+
+.code {
+  padding: 1em;
+  background-color: #1f1f1f;
+  color: aliceblue;
+  border-radius: 10px;
+  font-family: "Source Code Pro", monospace;
+}
