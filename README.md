@@ -39,11 +39,32 @@ can help with sizing
         
  ## Enabling in highlighting!
  
- After doing that, you should shee the code snippet but with no highlighting. If thats want you want,then you are done. But in my opinion, it looks pretty plain.
+ After doing that, you should shee the code snippet but with no highlighting. If thats want you want,then you are done. But in my opinion, it looks pretty plain. Let's fix that!
  In your `index.js` file, add 
- `highlighter(document.getElementById("id"));`
+ ```javascript
+var elements = document.getElementsByClassName("code");
+highlighter(elements[0]);
+highlighter(elements[1]);
+highlighter(elements[2]);
+```
 
-#### Replace Id with the same one your div is assigned to and you should be done!
+Doing it this way allows you to have certain snippets that are not syntax highlighted. Just add a 
+
+```javascript
+highlighter(elements[0]);
+
+```
+
+The number in the array corresponds to your div. If you have two snippets and you want bot of them to be highlighted, you would do:
+
+```javascript
+var elements = document.getElementsByClassName("code");
+highlighter(elements[0]);
+highlighter(elements[1]);
+```
+
+Make sure to define elements!
+
 
 ## Custom CSS styling
 
