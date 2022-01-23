@@ -1,0 +1,375 @@
+/*Copyright 2022 CloudCodesStuff Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+
+:root {
+  --bg: #ffff;
+  --text: black;
+  --text-alt: grey;
+  --primary-color: dodgerblue;
+  --primary-color-hover: rgb(66, 157, 248);
+  --header-color: #ffffff;
+  --btn: black;
+  --btn-text: white;
+  transition: 0.3s;
+}
+
+.dark-mode {
+  --bg: rgb(0, 0, 0);
+  --text: rgb(255, 255, 255);
+  --text-alt: rgb(255, 255, 255);
+  --primary-color: dodgerblue;
+  --primary-color-hover: rgb(66, 157, 248);
+  --header-color: #000000fd;
+  --btn: white;
+  --btn-text: black;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg);
+  transition: 0.5s;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: var(--text);
+
+  font-size: 6vw;
+}
+
+h2 {
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-size: 5vh;
+  margin: 10%;
+}
+
+section h1 {
+  text-align: center;
+}
+
+p {
+  color: var(--text-alt);
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin: 1em;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  color: var(--text);
+  font-weight: 800;
+  margin-top: 0.5em;
+  margin: 1em;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+section {
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: solid var(--primary-color) 3px;
+
+  padding: 0.7em;
+
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+
+  width: 300px;
+
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  margin: 0px;
+}
+
+.outline {
+  margin-top: 12px;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid var(--btn);
+  color: var(--btn);
+}
+
+.outline:hover {
+  background-color: var(--btn);
+  color: var(--btn-text);
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.button-container {
+  padding: 2px;
+  text-align: center;
+}
+
+.button-spacer {
+}
+
+hr {
+  width: 80%;
+  display: block;
+  margin: auto;
+
+  margin-top: 3em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--header-color);
+  backdrop-filter: blur(2px);
+}
+
+.logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+}
+
+nav {
+  order: 1;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+}
+
+.nav__links li {
+  padding: 0px 50px;
+  flex: 1;
+  text-align: center;
+}
+
+.nav__links li:nth-child(1) {
+  padding: 0 20px 0 200px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: var(--primary-color);
+}
+
+.cta {
+  order: 2;
+  margin-left: 20px;
+  padding: 5px 25px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--primary-color-hover);
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+.gradient {
+  background: linear-gradient(90.61deg, #2d9cdb -32.46%, #6fcf97 107.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#icon {
+  width: 40px;
+  cursor: pointer;
+  background-color: var(--bg);
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+footer {
+  position: absolute;
+  margin-top: 10vh;
+  bottom: -100;
+  left: 0;
+  right: 0;
+  background: var(--bg);
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: var(--text);
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}

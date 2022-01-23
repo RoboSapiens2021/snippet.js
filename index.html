@@ -1,40 +1,143 @@
+<!--Copyright 2022 CloudCodesStuff Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css">
+    <title>snippet.js</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/style.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+    
+
+
+    
   </head>
   <body>
-    <div id="code" class="code code-wrapper">
-      &lt;!DOCTYPE html&gt;<br />
-      &lt;html&gt;<br />
-      &lt;body&gt;<br />
-      <br />
-      &lt;h1&gt;Testing an HTML Syntax Highlighter&lt;/h2&gt;<br />
-      &lt;p&gt;Hello world!&lt;/p&gt;<br />
-      &lt;a href="https://www.w3schools.com"&gt;Back to School&lt;/a&gt;<br />
-      <br />
-      &lt;script src = ""&gt;<br />
-     
-      &lt;/script&gt;<br />
+    
+      <header class="sticky">
+          <a class="logo" href="/"><img id="logo" src="images/logo.png" alt="logo"></a>
+          <img src="images/moon.png" alt="darkMode" id="icon">
 
-      &lt;/body&gt;<br />
-      &lt;/html&gt;
-    </div>
-    <div id="code-2" class="code code-wrapper">
-      .code-wrapper { </br>background-color: black; </br>word-wrap: break-word; </br>}</br> </br>.code {</br>
-      padding: 1em; </br>background-color: #1f1f1f;</br> color: aliceblue;</br> border-radius:
-      10px;</br> font-family: "Source Code Pro", monospace; </br>}
-    </div>
+              <ul class="nav__links">
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="https://github.com/RoboSapiens2021/snippet.js" target="_blank">Github</a></li>
+              </ul>
+              
+          </nav>
+          
+      </header>
+
+    <section>
+      <div >
+        <h1 style="margin-top:2em;">The Snippet Library </br>for <span class="gradient">Everyone,</span></h1>
+       <p>Snippet.js is an easy to use library for displaying code. Built for Everyone</p>
+        </div>
+
+        <div class="button-container">
+          <a href="#" ">
+            <button onclick="darkMode()">
+              Start Learning!
+            </button>
+          </a>
+
+          <a
+            href="https://github.com/RoboSapiens2021/snippet.js"
+            target="_blank"
+          >
+            <button class="outline">
+              Go to the github!
+            </button>
+          </a>
+        </div>
+
+        <i class="fa fa-angle-down" style="font-size: 25px; font-weight: 900; margin: 5vh;"></i>
+
+
+      </div>
+    </section>
+    <section style="margin-top:12em">
+      <h1>Easy to use,</h1>
+
+      <h2>Import the Javascript</h2>
+      <div id="code" class="code code-wrapper" style="margin:60px"> &lt;script src=&quot;https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/highlight.js&lt;/script&gt;
+        </div>
+
+      <h2>Import the CSS</h2>
+      <div id="code" class="code code-wrapper" style="margin:60px"> &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css&quot;&gt;</div>
+
+
+      <h2>Create the Snippet</h2>
+
+        </div>
+      <div id="code" class="code code-wrapper" style="margin:60px"> &lt;div id=&quot;code&quot; class=&quot;code code-wrapper&quot;&gt; &lt;/div&gt;
+
+
+        </div>
+
+
+      <h1>Aaannd your done!</h1>
+      <p>Well, almost. Look at the github for more!</p>
+      <a
+            href="https://github.com/RoboSapiens2021/snippet.js"
+            target="_blank"
+          >
+            <button class="outline">
+              Go to the github!
+            </button>
+          </a>
+      
+
+
+
+
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>This is snippet.js</h3>
+            <p>Hey! You made it to the bottom! </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>MIT license designed by <span>CloudCodesStuff</span></p>
+        </div>
+    </footer>
+
 
 
 
     <script src="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/highlight.js"></script>
+    <script>
+
+    var icon = document.getElementById("icon");
+    var logo = document.getElementById("logo")
 
 
+    icon.onclick = function(){
+      document.body.classList.toggle("dark-mode")
+      
+      if(document.body.classList.contains("dark-mode")){
+          icon.src = "images/sun.png";
+          logo.src = "images/logolight.png"
+        }else{
+          icon.src = "images/moon.png";
+          logo.src = "images/logo.png"
+        }
+    }
+    
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
