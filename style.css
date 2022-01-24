@@ -373,3 +373,14 @@ footer {
   opacity: 0.4;
   font-weight: 200;
 }
+
+.code-wrapper {
+  background-color: black;
+  margin: 1em;
+}
+
+.code-nowrap {
+  white-space: nowrap;
+
+  overflow-x: scroll;
+}
