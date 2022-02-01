@@ -12,11 +12,11 @@ Before we start, make sure you have these two files ready to go:
 ## Javascript Import
 
 
-```<script src="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/highlight.js"></script>```
+```<script src="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/highlight.js"></script>```
 Put this script tag into your body tag. This script handles the text highlighting. So far, it only works with html. Further testing has to be done to figure out the javascript portion. This script came from w3 schools. The colors are edited. 
 
 ## CSS Import
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/style.css">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/style.css">`
 
 Put this into the head section of your html file.
 This handles backgrounds, layout etc.
