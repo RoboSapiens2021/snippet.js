@@ -33,7 +33,7 @@ If that sounds like to much work, you can look up html entity encoder. Paste tha
 can help with sizing
 
         
- ## Enabling in highlighting!
+ ## Enabling highlighting!
  
  After doing that, you should see the code snippet but with no highlighting. If that's want you want, then you are done. But in my opinion, it looks pretty plain. Let's fix that!
  In your `index.js` file, add 
@@ -76,6 +76,13 @@ properties.
 }
 
 ```
+
+ ## You can add the class code-nowrap to your div. Not enabled by default but I highly reccomend it for mobile browsers. 
+ ```CSS
+class = "code-nowrap"
+```
+
+
 
 # Thanks for reading!
 
