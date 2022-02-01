@@ -37,7 +37,31 @@ h1 {
   font-weight: 800;
   color: var(--text);
 
-  font-size: 6vw;
+  font-size: 6em;
+}
+
+@media only screen and (max-width: 410px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  .button-container {
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  .button-container {
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 5em;
+  }
 }
 
 h2 {

@@ -1,3 +1,15 @@
+var file = location.pathname.split( "/" ).pop();
+
+var link = document.createElement( "link" );
+link.href = "https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/style.css";
+link.type = "text/css";
+link.rel = "stylesheet";
+link.media = "screen,print";
+
+document.getElementsByTagName( "head" )[0].appendChild( link );
+
+
+
 function highlighter(elmnt, mode) {
   var lang = mode || "html";
   var elmntObj = document.getElementById(elmnt) || elmnt;
