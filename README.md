@@ -15,15 +15,11 @@ Before we start, make sure you have these two files ready to go:
 ```<script src="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/highlight.js"></script>```
 Put this script tag into your body tag. This script handles the text highlighting. So far, it only works with html. Further testing has to be done to figure out the javascript portion. This script came from w3 schools. The colors are edited. 
 
-## CSS Import
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/RoboSapiens2021/snippet.js/dist/style.css">`
 
-Put this into the head section of your html file.
-This handles backgrounds, layout etc.
 
 ## How to use it
 
-#### Great! You have the files imported! Now what?
+#### Great! You have the file imported! Now what?
 
 In your `index.html` file put:
 
@@ -39,7 +35,7 @@ can help with sizing
         
  ## Enabling in highlighting!
  
- After doing that, you should shee the code snippet but with no highlighting. If thats want you want,then you are done. But in my opinion, it looks pretty plain. Let's fix that!
+ After doing that, you should see the code snippet but with no highlighting. If that's want you want, then you are done. But in my opinion, it looks pretty plain. Let's fix that!
  In your `index.js` file, add 
  ```javascript
 var elements = document.getElementsByClassName("code");
