@@ -303,6 +303,7 @@ nav {
 .gradient {
   background: linear-gradient(90.61deg, #2d9cdb -32.46%, #6fcf97 107.58%);
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 }
 
@@ -401,10 +402,4 @@ footer {
 .code-wrapper {
   background-color: black;
   margin: 1em;
-}
-
-.code-nowrap {
-  white-space: nowrap;
-
-  overflow-x: scroll;
 }
